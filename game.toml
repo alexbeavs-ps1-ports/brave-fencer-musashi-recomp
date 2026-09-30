@@ -7,6 +7,8 @@ id = "SLUS-00726"
 players = 1
 exe = "disc/SLUS_007.26"
 disc = "disc/Brave Fencer Musashi (USA).cue"
+discs = ["disc/Brave Fencer Musashi (USA).cue"]
+disc_serials = ["SLUS-00726"]
 load_address = "0x80010000"
 entry_pc = "0x80010000"
 text_size = "0x00064800"
@@ -30,6 +32,7 @@ known_crc32 = [
 ]
 
 [recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
 seeds = "seeds/ghidra_funcs.txt"
 out_dir = "generated"
 strict = true
